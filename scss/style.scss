@@ -1,0 +1,356 @@
+//Конвертируется в .css в папку /css/
+@import "_fonts.scss";
+
+input::placeholder{
+    color: white;
+}
+textarea{
+    @include BoldDownFonts;
+    color: black;
+    font-size: 15px;
+    overflow: hidden;
+}
+input{
+    @include BoldUpFonts;
+    text-transform: none;
+    font-size: 15px;
+    width: 300px;
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+body{
+    background-color: #311432;
+    height: 100%;
+    color: white;
+}
+.header-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.header-icon{
+    margin-top: 5px;
+    cursor: pointer;
+}
+//section
+.container-auth{
+    margin: 0 auto;
+    width: 300px;
+}
+.block-auth{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #311432;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 20px #000000;
+    text-align: center;
+}
+.block-auth-name{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.block-login{
+    margin-bottom: 30px;
+}
+.block-password{
+    margin-bottom: 30px;
+}
+.block-auth-information{
+    margin-bottom: 50px;
+}
+.btn-accept{
+    @include BoldUpFonts;
+    font-size: 15px;
+    border: none;
+    background-color: #259F38;
+    padding: 15px 74.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+}
+.btn-accept:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+}
+.auth-information{
+    @include BoldUpFonts;
+    text-transform: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.auth-name{
+    @include BoldUpFonts;
+    letter-spacing: 1px;
+}
+#block-code{
+    display: none;
+}
+//acppanel
+.btn-buttons{
+    @include BoldUpFonts;
+    font-size: 13px;
+    border: none;
+    background-color: #342934;
+    padding: 15px 21.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+    width: 100%;
+    transition: .2s ease;
+}
+.btn-buttons:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+    background-color: #259F38;
+}
+.block-hotk{
+    display: none;
+    margin-top: 140px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #311432;
+    transform: translate(-50%, -50%);
+    width: 604px;
+    height: 664px;
+    box-shadow: 0px 0px 20px #000;
+    text-align: center;
+}
+.container-hotk{
+    margin: 0 auto;
+    width: 400px;
+}
+.block-button{
+    background: black;
+    margin-top: 20px;
+}
+.block-settings{
+    background: #342934;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+.block-button:last-child{
+    margin-bottom: 20px;
+}
+.block-name{
+    text-align: center;
+    padding-top: 20px;
+}
+.block-player-stats{
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    width: 100%;
+    border-radius: 20px;
+    transition: .2s ease;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+    cursor: pointer;
+
+}
+.block-player-stats:hover{
+    background-color: #259F38;
+    color: white;
+}
+.block-value{
+    margin: 0 auto;
+    width: 870px;
+}
+.block-nickname{
+    margin-left: 30px;
+}
+.block-more{
+    margin-right: 30px;
+}
+.nickname{
+    @include BoldUpFonts;
+    font-size: 13px;
+    text-transform: none;
+}
+.date{
+    @include BoldUpFonts;
+    font-size: 13px;
+    text-transform: none;
+}
+.more{
+    @include BoldUpFonts;
+    font-size: 13px;
+    text-transform: none;
+}
+.block-img{
+    background-color: black;
+    width: 300px;
+    height: 190px;
+}
+.block-stats-player{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.block-stats{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-kventa{
+    width: 100%;
+}
+.opis{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-top: 20px;
+}
+.block-buttons-btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 20px;
+}
+.block-close{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#block-autht{
+    display: none;
+}
+.block-player-question{
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    border-radius: 20px;
+    transition: .2s ease;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px 0px #534e4e;
+    cursor: pointer;
+}
+.block-player-question:hover{
+    background-color: #259F38;
+    color: white;
+}
+.question-name{
+    @include BoldUpFonts;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: none
+}
+#block-module{
+    display: none;
+}
+.btn-edit-question{
+    @include BoldUpFonts;
+    font-size: 15px;
+    border: none;
+    background-color: #259F38;
+    padding: 15px 78.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+}
+.btn-edit-question:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+}
+.btn-accept-player{
+    @include BoldUpFonts;
+    font-size: 15px;
+    border: none;
+    background-color: #259F38;
+    padding: 15px 78.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+}
+.btn-accept-player:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+}
+.btn-retest-player{
+    @include BoldUpFonts;
+    font-size: 15px;
+    border: none;
+    background-color: #a98403;
+    padding: 15px 44.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+}
+.btn-retest-player:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+}
+.btn-close-player{
+    @include BoldUpFonts;
+    font-size: 15px;
+    border: none;
+    background-color: #9F2525;
+    padding: 15px 78.5px;
+    color: white;
+    transition: .2s ease;
+    letter-spacing: 2px;
+}
+.btn-close-player:hover{
+    box-shadow: 0px 0px 20px 0px rgb(83 78 78);
+}
+.block-one-btn{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.block-two-btn{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1024px){
+    .block-value {
+        margin: 0 auto;
+        width: 640px;
+    }
+}
+@media screen and (max-width: 768px){
+    .block-value {
+        margin: 0 auto;
+        width: 415px;
+    }
+}
+@media screen and (max-width: 425px){
+    .block-value {
+        margin: 0 auto;
+        width: 349px;
+    }
+}
+@media screen and (max-width: 375px){
+    .block-value {
+        margin: 0 auto;
+        width: 307px;
+    }
+}
+@media screen and (max-width: 320px){
+    .block-value {
+        margin: 0 auto;
+        width: 268px;
+    }
+    input{
+        width: 100%;
+    }
+    .block-stats{
+        justify-content: center;
+    }
+}

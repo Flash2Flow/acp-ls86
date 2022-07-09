@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>LS86 - ACP</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-block">
+                <div class="header-logo">
+                    <h3 class="logo">LS86 | ACP</h3>
+                </div>
+                <div class="header-icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <form action="">
+            <!--Блок авторизации-->
+            <div class="block-auth" id="block-auth">
+                <div class="container-auth">
+                    <div class="block-auth-name">
+                        <h1 class="auth-name">АВТОРИЗАЦИЯ</h1>
+                    </div>
+                    <div class="block-auth-inputs">
+                        <div class="block-login">
+                            <input type="text" name="text" id="text" placeholder="Введите логин...">
+                        </div>
+                        <div class="block-password">
+                            <input type="password" name="password" id="password" placeholder="Введите пароль...">
+                        </div>  
+                    </div>
+                    <div class="block-auth-information">
+                        <p class="auth-information">
+                            if you auth in our service, you accept our rules/polit
+                        </p>
+                    </div>
+                    <div class="block-auth-btn-accept">
+                        <button class="btn-accept" type="button" id="btn-accept">ОТПРАВИТЬ</button>
+                    </div>
+                </div>
+            </div>
+             <!--/-->
+
+             <!--Блок с кодом-->
+             <div class="block-auth" id="block-code">
+                <div class="container-auth">
+                    <div class="block-auth-name">
+                        <h1 class="auth-name">АВТОРИЗАЦИЯ КОДА</h1>
+                    </div>
+                    <div class="block-auth-inputs">
+                        <div class="block-auth-information">
+                            <p class="auth-information">
+                                We send 2FA code to your SNetWork
+                            </p>
+                        </div>
+                        <div class="block-password">
+                            <input type="password" name="code" id="code" placeholder="Введите код...">
+                        </div>  
+                    </div>
+                    <div class="block-auth-btn-accept">
+                        <button class="btn-accept" type="button">ОТПРАВИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <!--/-->
+        </form>
+    </section>
+
+    <script src="https://kit.fontawesome.com/fe0c420bba.js" crossorigin="anonymous"></script>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>

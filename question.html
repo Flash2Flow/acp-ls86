@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>LS86 - ACP</title>
+</head>
+<body>
+    
+    <!--Модульное окно для отклонения-->
+    <form action="">
+    <div class="block-auth" id="block-autht">
+        <div class="block-close">
+            <h id="close">X</h>
+        </div>
+        <div class="container-auth">
+            <div class="block-auth-name">
+                <h1 class="auth-name">ОТКЛОНИТЬ ЗАЯВЛЕНИЕ</h1>
+            </div>
+            <div class="block-auth-inputs">
+                <div class="block-password">
+                    <input type="text" name="password" id="password" placeholder="Введите причину...">
+                </div>  
+            </div>
+            <div class="block-auth-btn-accept">
+                <button class="btn-accept" type="button" id="btn-accept">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header-block">
+                <div class="header-logo">
+                    <h3 class="logo">LS86 | ACP</h3>
+                </div>
+                <div class="header-icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+
+        <!--Панель управления-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="block-buttons-acp">
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">USERS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="ucp">UCP</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">UCP.SERVER</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">CONSOLE</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">LOGS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">SERVER.LOGS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">DS.LOGS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">vavylon.STATUS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">FORUM.USERS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">h.DATABASE</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">adm.STATS</button>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn-buttons" type="button" id="users">sup.STATS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="block-settings">
+                        <div class="block-value">
+                            <div class="block-name">
+                                <h3 class="name">USER.PERS.NAME</h3>
+                            </div>
+                            <div class="block-situation-player">
+                                <div class="block-one-situation">
+                                    <textarea name="ans-one" id="" class="opis"></textarea>
+                                </div>
+                                <div class="block-two-situation">
+                                    <textarea name="ans-two" id="" class="opis"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/-->
+    </section>
+
+    <script src="https://kit.fontawesome.com/fe0c420bba.js" crossorigin="anonymous"></script>
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
